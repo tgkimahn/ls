@@ -45,9 +45,9 @@ Write-Host "Unzip Complete."
 
 Write-Host "Installing ElasticAgent..."
 
-.\elastic-agent.exe install -f  `
-  --fleet-server-es=http://10.30.11.219:9200 `
-  --fleet-server-service-token=AAEAAWVsYXN0aWMvZmxlZXQtc2VydmVyL3Rva2VuLTE2NDI2NjI3ODk1Njk6bk1KY0ZGZGNRcXV1VXdsclNuMjhyZw `
-  --fleet-server-policy=499b5aa7-d214-5b5d-838b-3cd76469844e `
-  --fleet-server-insecure-http
+#.\elastic-agent.exe install -f  `
+#  --fleet-server-es=http://10.30.11.219:9200 `
+#  --fleet-server-service-token=AAEAAWVsYXN0aWMvZmxlZXQtc2VydmVyL3Rva2VuLTE2NDI2NjI3ODk1Njk6bk1KY0ZGZGNRcXV1VXdsclNuMjhyZw `
+#  --fleet-server-policy=499b5aa7-d214-5b5d-838b-3cd76469844e `
+#  --fleet-server-insecure-http
   
