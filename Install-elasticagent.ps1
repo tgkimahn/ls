@@ -43,8 +43,11 @@ Set-Location $path\elasticagent\elastic-agent-7.16.2-windows-x86_64
 
 Write-Host "Unzip Complete."
 
-Write-Host "Installing ElasticAgent..."
+Write-Host "Installing ElasticAgent throught Fleet..."
 
+.\elastic-agent.exe install --url=http://10.30.11.219:8220 --enrollment-token=ZWhtNGUzNEItbXZmc1BfR2FjOHc6RXZjRnBJQmxTQldMc0FCdGVnSWcxZw==
+
+Write-Host "ElasticAgent Installed"
 #.\elastic-agent.exe install -f  `
 #  --fleet-server-es=http://10.30.11.219:9200 `
 #  --fleet-server-service-token=AAEAAWVsYXN0aWMvZmxlZXQtc2VydmVyL3Rva2VuLTE2NDI2NjI3ODk1Njk6bk1KY0ZGZGNRcXV1VXdsclNuMjhyZw `
