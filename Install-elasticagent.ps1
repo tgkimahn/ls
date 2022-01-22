@@ -45,7 +45,7 @@ Write-Host "Unzip Complete."
 
 Write-Host "Installing ElasticAgent throught Fleet..."
 
-.\elastic-agent.exe install --url=http://10.30.11.219:8220 --enrollment-token=ZWhtNGUzNEItbXZmc1BfR2FjOHc6RXZjRnBJQmxTQldMc0FCdGVnSWcxZw==
+.\elastic-agent.exe install --insecure --url=http://10.30.11.219:8220 --enrollment-token=ZWhtNGUzNEItbXZmc1BfR2FjOHc6RXZjRnBJQmxTQldMc0FCdGVnSWcxZw==
 
 Write-Host "ElasticAgent Installed"
 #.\elastic-agent.exe install -f  `
