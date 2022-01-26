@@ -19,3 +19,6 @@ Build up the baseline security
  7. inspect startup across Windows
  8. install SIEM such as ELK stack
  9. install anti-virus, beats etc (to gather endpoint events) => elasticagent
+ 10. RUN Windows Resource Checker (as Administrator)
+     > sfc /scannow 
+     
