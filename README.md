@@ -7,6 +7,7 @@ Implement endpoint security system with sysmon/winlogbeat/elasticagent under ela
 	}'
 
 Build up the baseline security
+
  change password in a batch
  deny local logon such as rdp
  deny id/pw logon, instead use only ssh key logon 
