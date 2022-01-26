@@ -15,6 +15,7 @@ Build up the baseline security
   - disable local logon
   - disable rdp etc
  5. run windows file protection
- 6. inspect startup across Windows
- 7. install SIEM such as ELK stack
- 8. install anti-virus, beats etc (to gather endpoint events) => elasticagent
+ 6. disable sticky key(5-times shift) & ease of access button (by GPO?)
+ 7. inspect startup across Windows
+ 8. install SIEM such as ELK stack
+ 9. install anti-virus, beats etc (to gather endpoint events) => elasticagent
