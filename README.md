@@ -1,5 +1,6 @@
 # ls prep.
 Implement endpoint security system with sysmon/winlogbeat/elasticagent under elasticsearch and kinana
+ - Set-Item WSMan:\localhost\Client\TrustedHosts –Value {* or targetip}
  - Run ' Invoke-Command -ScriptBlock {`
 	Set-ExecutionPolicy Bypass -Scope Process -Force;`
 	iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/tgkimahn/ls/master/Install-{changeit}.ps1'))`
