@@ -8,13 +8,13 @@ Implement endpoint security system with sysmon/winlogbeat/elasticagent under ela
 
 Build up the baseline security
 
- change password in a batch
- deny local logon such as rdp
- deny id/pw logon, instead use only ssh key logon 
- depoly seuciryt hardening GPO
+ 1. change password in a batch
+ 2. deny local logon such as rdp
+ 3. deny id/pw logon, instead use only ssh key logon 
+ 4. depoly seuciryt hardening GPO
   - disable local logon
   - disable rdp etc
- run windows file protection
- inspect startup across Windows
- install SIEM such as ELK stack
- install anti-virus, beats etc (to gather endpoint events)
+ 5. run windows file protection
+ 6. inspect startup across Windows
+ 7. install SIEM such as ELK stack
+ 8. install anti-virus, beats etc (to gather endpoint events) => elasticagent
