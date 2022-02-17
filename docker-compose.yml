@@ -6,7 +6,7 @@ services:
     environment:
       - xpack.security.enabled=true
       - xpack.security.authc.api_key.enabled=true
-      - ELASTIC_PASSWORD=changeme
+      - ELASTIC_PASSWORD=elasticpwd=
       - discovery.type=single-node
     ports:
       - 9200:9200
@@ -18,9 +18,10 @@ services:
     image: docker.elastic.co/kibana/kibana:7.16.2
     container_name: tg-kib
     environment:
-      ELASTICSEARCH_URL: http://tg-es:9200
-      ELASTICSEARCH_USERNAME: elastic
-      ELASTICSEARCH_PASSWORD: changeme
+      - ELASTICSEARCH_URL=http://tg-es:9200
+      - ELASTICSEARCH_USERNAME=elastic
+      - ELASTICSEARCH_PASSWORD=elasticpwd=
+      - XPACK_ENCRYPTEDSAVEDOBJECTS_ENCRYPTIONKEY=A123456789012345678901234567890X
     ports:
       - 5601:5601
 
