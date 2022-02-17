@@ -21,10 +21,11 @@ services:
       - ELASTICSEARCH_URL=http://tg-es:9200
       - ELASTICSEARCH_USERNAME=elastic
       - ELASTICSEARCH_PASSWORD=elasticpwd=
-      - XPACK_ENCRYPTEDSAVEDOBJECTS_ENCRYPTIONKEY=A123456789012345678901234567890X  #for elastic security activation
+      - XPACK_ENCRYPTEDSAVEDOBJECTS_ENCRYPTIONKEY=A123456789012345678901234567890X  #for elastic security activation (에이전트 설치시 에러 발생, 삭제 시 성공)
     ports:
       - 5601:5601
 
 # separate command
 # run in the ES server for enrolling elastic agent server
 #- sudo ./elastic-agent install     --fleet-server-es=http://localhost:9200   --fleet-server-service-token=AAEAAWVsYXN0aWMvZmxlZXQtc2VydmVyL3Rva2VuLTE2NDI3NTc3NzcxNjk6RUc4Y1JwbGpRSjY0T3ZndEpkemcwQQ   --fleet-server-policy=499b5aa7-d214-5b5d-838b-3cd76469844e   --fleet-server-insecure-http
+# 윈도우에 에이전트 설치 시, --insecure 플래그 필요
