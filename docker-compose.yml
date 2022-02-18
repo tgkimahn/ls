@@ -6,6 +6,7 @@ services:
     environment:
       - xpack.security.enabled=true #for elastic security activation
       - xpack.security.authc.api_key.enabled=true #for elastic agent installation
+      - xpack.license.self_generated.type=trial
       - ELASTIC_PASSWORD=elasticpwd=
       - discovery.type=single-node
     ports:
