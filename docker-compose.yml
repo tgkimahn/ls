@@ -21,6 +21,7 @@ services:
       - ELASTICSEARCH_URL=http://tg-es:9200
       - ELASTICSEARCH_USERNAME=elastic
       - ELASTICSEARCH_PASSWORD=elasticpwd=
+      - XPACK_SECURITY_ENABLED=true
       - XPACK_ENCRYPTEDSAVEDOBJECTS_ENCRYPTIONKEY=A123456789012345678901234567890X  #for elastic security activation (에이전트 설치시 에러 발생, 삭제 시 성공)
     ports:
       - 5601:5601
